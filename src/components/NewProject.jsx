@@ -31,7 +31,7 @@ function NewProject({onAdd, onCancel}) {
       <Modal ref={modal} btnCaption='Close'>
         <h2 className='text-xl font-bold text-stone-500 my-4'>Invalid Input</h2>
         <p className='text-stone-600 mb-4'>Oops...Looks like you forgot to enter a value</p>
-        <p className='text-stone-600 mb-4'>Please Make sure you provide a valid valur for every input field.</p>
+        <p className='text-stone-600 mb-4'>Please Make sure you provide a valid value for every input field.</p>
       </Modal>
       <div className='w-[35rem] mt-16'>
         <menu className='flex items-center justify-center gap-4 my-4'>
