@@ -28,6 +28,8 @@ function App() {
       }
     })
   }
+
+
   function handleDeleteTask(id){
     setProjectsState(prevState => {
   
@@ -39,6 +41,7 @@ function App() {
     });
   }
 
+
   function handleStartAddProject(){
     setProjectsState(prevState => {
 
@@ -48,6 +51,7 @@ function App() {
       };
     });
   }
+
 
   function handleAddProject(projectData) {
     setProjectsState(prevState => {
@@ -111,6 +115,8 @@ function App() {
   else if (projectsState.selectedProjectId === undefined){
     content = <NoProjectSelected onStartAddProject={handleStartAddProject}></NoProjectSelected>
   }
+  
+  
   return (
     <main className="h-screen flex gap-8">
       <ProjectsSidebar selectedProjectId={projectsState.selectedProjectId}
